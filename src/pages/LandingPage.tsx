@@ -249,7 +249,7 @@ export default defineConfig({
           </motion.div>
 
           {/* Core App Mock Wrapper */}
-          <div className="relative rounded-2xl border border-white/5 bg-slate-900/60 overflow-hidden aspect-[16/9] flex flex-col">
+          <div className="relative rounded-2xl border border-white/5 bg-slate-900/60 overflow-hidden aspect-auto min-h-[480px] md:min-h-0 md:aspect-[16/9] flex flex-col">
             {/* Header window control buttons */}
             <div className="h-12 border-b border-white/5 bg-slate-950/60 px-4 flex items-center justify-between">
               <div className="flex gap-2">
@@ -849,7 +849,7 @@ export default defineConfig({
             </div>
 
             {/* 2. OVERLAPPING PHONE MOCKUP CONTAINER */}
-            <div className="absolute -bottom-10 -right-4 md:-right-6 w-36 md:w-44 aspect-[9/18] bg-slate-950 border-[6px] border-slate-900 rounded-[2rem] shadow-2xl z-20 overflow-hidden flex flex-col justify-between group">
+            <div className="absolute -bottom-10 right-2 sm:-right-4 md:-right-6 w-28 sm:w-36 md:w-44 aspect-[9/18] bg-slate-950 border-[6px] border-slate-900 rounded-[2rem] shadow-2xl z-20 overflow-hidden flex flex-col justify-between group">
               <div className="absolute top-2 left-1/2 -translate-x-1/2 w-12 h-2.5 bg-slate-900 rounded-full z-30" />
               
               {/* Phone Screen content (Interactive Mobile App Preview) */}
